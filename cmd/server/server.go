@@ -71,10 +71,6 @@ type response struct {
 	ReplyTime int64  `json:"reply_time"`
 }
 
-func (p *probe) ping() {
-
-}
-
 func (p *probe) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	values := r.URL.Query()
 	datas, exist := values["data"]

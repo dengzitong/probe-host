@@ -31,9 +31,9 @@ var (
 )
 
 func init() {
-	pflag.StringVar(&addr, "addr", "127.0.0.1", "-addr 127.0.0.1")
-	pflag.StringVar(&port, "port", "9999", "-port 9999")
-	pflag.IntVar(&probe_timeout, "probe-timeout", 1, "-probe-timeout 1")
+	pflag.StringVar(&addr, "addr", "127.0.0.1", "--addr 127.0.0.1")
+	pflag.StringVar(&port, "port", "9999", "--port 9999")
+	pflag.IntVar(&probe_timeout, "probe-timeout", 1, "--probe-timeout 1")
 	pflag.Parse()
 }
 
